@@ -9,18 +9,21 @@
 </head>
 
 <body>
+
     <main class="container">
         <h1>Mi Lista de Tareas</h1>
+
         <form id="formulario-tareas">
-            <input type="text" placeholder="Agregar nueva tarea..." required>
+            <input type="text" id="input-tarea" placeholder="Agregar nueva tarea..." required>
+
             <button type="submit">Agregar</button>
+            <button type="button" id="boton-borrar">Borrar</button>
         </form>
-        <ul id="lista-tareas">
-            <li>Tarea ejemplo 1</li>
-            <li>Tarea ejemplo 2</li>
-            <li>Tarea ejemplo 3</li>
-        </ul>
+
+        <ul id="lista-tareas"></ul>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
