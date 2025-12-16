@@ -2,6 +2,7 @@ let formulario = document.getElementById("formulario-tareas");
 let input = document.getElementById("input-tarea");
 let lista = document.getElementById("lista-tareas");
 let botonBorrar = document.getElementById("boton-borrar");
+let botonBorrarTodo = document.getElementById("boton-borrar-todo");
 
 formulario.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -17,4 +18,7 @@ botonBorrar.addEventListener("click", function () {
     if (lista.lastChild) {
         lista.lastChild.remove();
     }
+});
+botonBorrarTodo.addEventListener("click", function () {
+    lista.innerHTML = "";
 });
